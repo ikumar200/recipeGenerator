@@ -14,7 +14,7 @@ CORS(app)  # Enable CORS for frontend communication
 HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Initialize Hugging Face client
-client = InferenceClient("https://jc26mwg228mkj8dw.us-east-1.aws.endpoints.huggingface.cloud")
+# client = InferenceClient("https://jc26mwg228mkj8dw.us-east-1.aws.endpoints.huggingface.cloud")
 
 @app.route("/generate-recipe", methods=["POST"])
 def generate_recipe():
