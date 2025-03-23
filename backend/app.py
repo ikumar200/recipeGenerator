@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
 
 # Get Hugging Face API token from environment variable
-HF_TOKEN = os.getenv("HF_TOKEN")
+# HF_TOKEN = os.getenv("HF_TOKEN")
 
 # Initialize Hugging Face client
 client = InferenceClient("https://jc26mwg228mkj8dw.us-east-1.aws.endpoints.huggingface.cloud")
