@@ -8,7 +8,8 @@ const Home = () => {
 
     const handleGenerateRecipe = async (userInput) => {
         setRecipe("Generating recipe... ⏳");
-        const response = await generateRecipe(userInput);
+        const ingredientsArray = userInput.split(',').map(item => item.trim());
+        const response = await generateRecipe(ingredientsArray);
         setRecipe(response.recipe || "Error generating recipe.");
     };
 
